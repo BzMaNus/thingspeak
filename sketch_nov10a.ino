@@ -12,6 +12,7 @@ WiFiClient client;
 
 void setup() {
   Serial.begin(115200);
+  dht11.begin();
   init_wifi("Chatree01", "0620565502");
   ThingSpeak.begin(client);
 }
